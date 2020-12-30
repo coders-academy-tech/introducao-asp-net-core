@@ -1,0 +1,9 @@
+﻿@model CarListViewModel
+
+
+<h1>@Model.CurrentCategory</h1>
+
+@foreach (var car in Model.Cars)
+{
+    <partial name="_CarCard" model="car" />
+}

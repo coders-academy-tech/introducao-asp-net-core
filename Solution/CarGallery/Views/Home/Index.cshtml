@@ -1,0 +1,14 @@
+﻿@model HomeViewModel
+
+
+<h2>Car of all over the years</h2>
+
+
+<div class="row">
+
+    @foreach (var car in Model.Cars)
+    {
+        <partial name="_CarCard" model="car" />
+    }
+
+</div>
